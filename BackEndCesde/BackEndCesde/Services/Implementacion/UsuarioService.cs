@@ -25,7 +25,7 @@ namespace BackEndCesde.Services.Implementacion
                 var key = Encoding.ASCII.GetBytes("veryverysecret.....");
                 var identity = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Role, modelo.Contrasena),
+                    new Claim(ClaimTypes.Role, "Docente"),
                     new Claim(ClaimTypes.Name, modelo.NombreUsuario)
                 });
 
