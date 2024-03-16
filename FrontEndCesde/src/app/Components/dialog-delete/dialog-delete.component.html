@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center border-bottom border-2 mb-3">
+ <h1 mat-dialog-title>Eliminar Docente</h1> 
+</div>
+<div mat-dialog-content>
+  ¿Desea eliminar el docente '{{ dataDocente.nombres }} {{ dataDocente.apellidos }}'?
+</div>
+<div mat-dialog-actions class="d-flex justify-content-between">
+  <button mat-raised-button mat-dialog-close color="warn">No</button>
+  <button mat-raised-button color="primary" (click)="confirmarEliminar()" cdkFocusInitial>Si</button>
+</div>

@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="d-flex justify-content-center border-bottom pb-1 border-2 mb-5">
+    <div>
+      <h1>EDITAR DOCENTE</h1>
+    </div>
+  </div>
+  <form [formGroup]="formDocente">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label class="form-label">Tipo Identificación</label>
+          <select class="form-select" formControlName="tipoIdentificacion" [(ngModel)]="docenteData.tipoIdentificacion" >
+            <option value="CC">CC</option>
+            <option value="CE">CE</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Identificación</label>
+          <input type="text" class="form-control" formControlName="id" [(ngModel)]="docenteData.id" readonly>
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Nombres</label>
+          <input type="text" class="form-control" formControlName="nombres" [(ngModel)]="docenteData.nombres">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Apellidos</label>
+          <input type="text" class="form-control" formControlName="apellidos" [(ngModel)]="docenteData.apellidos">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-3">
+          <label class="form-label">Correo Electronico</label>
+          <input type="text" class="form-control" formControlName="correoElectronico" [(ngModel)]="docenteData.correoElectronico">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Telefono Celular</label>
+          <input type="number" class="form-control" formControlName="telefonoCelular" [(ngModel)]="docenteData.telefonoCelular">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Numero Contrato</label>
+          <input type="number" class="form-control" formControlName="numeroContrato" [(ngModel)]="docenteData.numeroContrato">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label">Ciudad Residencia</label>
+          <input type="text" class="form-control" formControlName="ciudadResidencia" [(ngModel)]="docenteData.ciudadResidencia">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Escalafon Tecnico</label>
+          <select class="form-select" formControlName="escalafonTecnico" [(ngModel)]="docenteData.escalafonTecnico">
+            <option value="Tecnico">Técnico</option>
+            <option value="Tecnologo">Tecnólogo</option>
+            <option value="Profesional">Profesional</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Escalafon Extension</label>
+          <select class="form-select" formControlName="escalafonExtension" [(ngModel)]="docenteData.escalafonExtension">
+            <option value="Tecnico experiencia inferior 1 año">Técnico experiencia inferior 1 año</option>
+            <option value="Tecnico experiencia superior 1 año">Técnico experiencia superior 1 año</option>
+            <option value="Tecnologo">Tecnólogo</option>
+            <option value="Profesional">Profesional</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="d-flex justify-content-center gap-5">
+    <div>
+      <a mat-raised-button color="primary" routerLink="/docentes">ATRAS</a>
+    </div>
+    <div>
+      <button mat-raised-button color="primary" (click)=addEditDocente() [disabled]="formDocente.invalid">GUARDAR</button>
+    </div>  
+  </div>
+</div>
+

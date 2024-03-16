@@ -1,0 +1,24 @@
+.nombre-usuario {
+    padding-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.icon{
+    font-size: 28px;
+    color: white;
+}
+.mat-icon-button{
+    padding-top: 7px;
+    color: white;
+}
+nav{
+    background-color: #EE2B7B;
+    height: 80px;
+}
+
+nav img {
+    padding-left: 20px;
+    width: 200px;
+    height: 40px;
+}

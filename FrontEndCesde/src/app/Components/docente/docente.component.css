@@ -1,0 +1,35 @@
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table th {
+    text-align: center;
+    font-size: 15px;
+    padding: 0;
+    color: white;
+    background-color: #EE2B7B;
+}
+
+table td {
+    border: 1px solid #e0e0e0;
+    padding: 0;
+}
+
+h1{
+    color: #EE2B7B;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 30%;
+}
+
+.mat-column-Acciones {
+    width: 10%;
+    padding: 0;
+}
+
+.mat-raised-button {
+    background-color: #30B0D5;
+}

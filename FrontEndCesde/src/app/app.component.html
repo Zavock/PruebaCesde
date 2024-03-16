@@ -1,0 +1,17 @@
+<nav class="navbar mb-5">
+  <div class="container-fluid">
+    <img src="./assets/Images/logo.png" class="img-cesde" alt="cesde-logo">
+    <div class="d-flex align-items-center gap-4" *ngIf="isLoggedIn()">
+      <div>
+        <mat-icon class="icon">person</mat-icon>
+      </div>
+      <div>
+        <p class="nombre-usuario">{{nombre}}</p>
+      </div>
+      <div>
+        <button class="mat-icon-button" (click)="logout()"><mat-icon>logout</mat-icon></button>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
